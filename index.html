@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>Lucas Toledo is an User Experience Designer</title>
+		<title>Lucas Toledo - Product & User Experience Designer</title>
 		<meta charset="utf-8">
-		<meta name="description" content="Lucas Toledo is an user experience designer and entrepreneur.">
+		<meta name="description" content="Lucas Toledo is a product and user experience designer.">
 		<meta name="author" content="Lucas Toledo">
-
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Muli|Open+Sans:400,600" rel="stylesheet">
-
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100350361-4"></script>
@@ -21,21 +22,97 @@
 		</script>
 	</head>
 
-
 <body>
 
-<div class="flex-box">
+<!-- Navigation Header -->
+<nav class="head fade-two">
+	<a href="mailto:hello@lucastoledo.co" class="nav-contact"><i class="far fa-envelope"></i></a>
+	<span class="menu">
+		<a href="https://www.behance.net/hello7564" target="_blank" class="nav-work">Work</a>
+		<span onclick="openAbout()" class="trigger-about nav-about">About</span>
+	</span>
+</nav>
 
-<span class="container">
+<!-- About Overlay -->
+<div id="aboutNav" class="overlay">
+	<nav>
+		<span href="javascript:void(0)" class="close-about" onclick="closeAbout()">About</span>
+	</nav>
+	<div class="overlay-content">
+		<img class="about-photo" src="img/about.jpg" alt="Lucas Toledo"></img>
+			<h1>Product Designer & UX Consultant</h1>
+				<p>I help transform your ideas into websites, apps and interfaces that people really want to use.</p>
+				<br>
+				<a href="mailto:hello@lucastoledo.co">Get In Touch</a>
+	</div>
+</div>
 
-	<h2 class="name"><a href="mailto:hi@hlucastoledo.co">Lucas Toledo</a> is a<br class="mobile-break"> designer and entrepreneur //</h2>
-	<h1 class="title">Design for<br class="mobile-break"> Impact.</h1>
+<!-- Container -->
 
-	<span class="coming-soon">Website Coming Soon</span>
+<div id="foreground"></div>
+<div class="container">
 
-</span>
+<!-- Hero Section -->
+
+	<div class="hero fade-one">
+		<span>
+			<p>Product Designer &amp; UX Consultant<i class="material-icons plane-icon">&#xE195;</i></p>
+			<h1>Transform your idea into a product people want to use.</h1>
+		</span>
+	</div>
+
+	<div class="main-article fade-two">
+		<a href="file:///Users/Lucas/Sites/hellolucas.github.io/growing-a-company-on-ux.html">
+			<img class="main-post" src="img/mozio/lead-bg.png" alt="Mozio UX culture">
+			<img class="main-post tablet" src="img/mozio/lead-bg-tablet.png" alt="Mozio UX culture">
+			<img class="main-post mobile" src="img/mozio/lead-bg-mobile.png" alt="Mozio UX culture">
+				<div class="main-text-container">
+					<h1 class="main-title">Aligning and scaling<br>a company around User Experience</h1>
+					<p class="main-body">User experience should start at the brand promise.<br><br>
+					<span class="case-study-button">Read Case Study<span></p>
+					</p>
+				</div>
+			</img>
+		</a>
+	</div>
+
+
+<!-- Subscribe Section -->
+
+<div class="sub-container">
+
+		<h1 class="subscribe">
+			I've started writing about how to turn ideas into digital products people want
+			to use.<br>Hopefully it can be useful to you.
+		</h1>
+	<!-- Begin MailChimp Signup Form -->
+
+	<form action="https://lucastoledo.us17.list-manage.com/subscribe/post?u=9b0d88ac2c3f320d564727d1d&amp;id=6ee3d6a1a8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Your Email" required>
+		<input type="text" value="" name="FNAME" id="mce-FNAME" placeholder="Your Name">
+		<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+	    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9b0d88ac2c3f320d564727d1d_6ee3d6a1a8" tabindex="-1" value=""></div>
+	</form>
+	<!--End mc_embed_signup-->
+</div>
 
 </div>
+
+<!-- Footer Section -->
+
+<nav class="footer">
+
+	<a href="mailto:hello@lucastoledo.co" class="footer-contact"><i class="far fa-envelope"></i></a>
+	<span class="footer-links">
+		<a href="https://www.linkedin.com/in/toledotoledo/" target="_blank">Linkedin</a>
+		<a href="https://open.spotify.com/user/lucastoledo2018/playlist/6h0hbXXcveXLcin3H2ZkHj?si=SMr3YqFhQnWrhUqu4TK5qQ" target="_blank">Spotify</a>
+	</span>
+	<a href="#top"><img src="img/return-arrow.svg" alt="Return To Top" class="footer-arrow" width="16" height="16"></a>
+
+</nav>
+
+<script type="text/javascript" src="js/javascript.js"></script>
 
 </body>
 

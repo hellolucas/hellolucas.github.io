@@ -1,69 +1,662 @@
-* { box-sizing: border-box; }
+/* ============================================================================= */
+/* ============================ Page Wide Syling ============================== */
+/* ============================================================================= */
 
-div.flex-box {
-	display: flex;
-	align-items: center;
-	margin: 0 4vw;
-	height: 90vh;
-	margin-bottom: 10vh;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-.title, .name, .coming-soon {
+body {
+	background-color: #0267C1;
+	font: normal 1em 'Open Sans', Helvetica, sans-serif;
+}
+
+ul, ol { margin-left: 40px; }
+li { margin: 8px 0; }
+
+blockquote {
+	padding: 8px 0 8px 16px;
+	margin: 16px 0;
+	font-style: italic;
+	border-left: 4px solid #0267C1;
+	font-size: 1.2em;
+}
+
+#foreground {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: #ffffff;
+	z-index:-1;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ============================================================================= */
+/* =========================== Navigation - General ============================ */
+/* ============================================================================= */
+
+nav.head, nav, nav.head-post {
+	height: 120px;
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-contact,
+.nav-work,
+.nav-about {
+	font: normal 16px 'Muli', Helvetica, sans-serif;
+	text-decoration: none;
+	color: #000000;
+}
+
+.nav-work {
+	margin-right: 16px;
+}
+.nav-about {
+	cursor: pointer;
+}
+
+.nav-contact:hover,
+.nav-work:hover,
+.nav-about:hover {
+	color: #0267C1;
+	transition: all 0.2s;
+}
+
+/* ======== About Overlay Section ======== */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+		display: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #fcfcfc;
+    overflow: hidden;
+}
+
+.overlay-content {
+		max-width: 700px;
+		margin: 0 auto;
+		padding: 0 24px;
+		position: relative;
+		top: 18%;
+		transform: translateY(-18%);
+}
+
+.about-photo {
+	width: 180px;
+	height: auto;
+	margin-bottom: 16px;
+}
+
+.overlay-content h1 {
+	font-size: 2.2em;
+}
+
+.overlay-content p {
+	font-size: 1.2em;
+	line-height: 160%;
+	margin-top: 16px;
+}
+
+.overlay-content a {
+	color: #0267C1;
+	font-size: 1.4em;
+	margin-top: 16px;
+	display: inline-block;
+	padding: 12px 24px 15px 24px;
+	border: 1px solid #0267C1;
+}
+
+.overlay-content a:hover {
+	background-color: #0267C1;
+	color: #ffffff;
+	transition: all .2s;
+}
+
+
+
+/* ======== Position the close button (top right corner) ======== */
+
+.close-about {
+	cursor: pointer;
+	text-decoration: line-through;
+	font: normal 16px 'Muli', Helvetica, sans-serif;
+	color: #333333;
+	margin-left: auto;
+
+}
+.close-about:hover {
+	color: #0267C1;
+	transition: all 0.2s;
+}
+
+.back-arrow {
+	transform: rotate(-90deg);
+	position: fixed;
+	z-index: 2;
+}
+
+/* ============================================================================= */
+/* ================================== Homepage ================================= */
+/* ============================================================================= */
+
+div.container {
+	max-width: 1024px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+/* Key hero sentence */
+
+.hero {
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	height: 74vh;
+	width: 100%;
+	text-align: left;
+}
+
+.hero h1 {
+	font: normal 4em 'Muli', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	color: #000000;
+	margin-top: 12px;
 }
 
-.title {
-	font: normal 96px 'Muli', Helvetica, sans-serif;
-	line-height: 0;
-	color: #191616;
+/* ======== Additional information in the hero ======== */
+
+.hero p {
+	margin-top: -54px;
+	color: #999999;
+	font-weight: 300;
 }
 
-.name {
-	font: normal 18px 'Open Sans', Helvetica, sans-serif;
-	color: #B2B0B0;
+.plane-icon {
+	transform: rotate(90deg);
+	width: 10px;
+	height: auto;
+	margin-left: 16px;
 }
 
-.name a {
-	text-decoration: none;
-	color: #EEA243;
-}
-.name a:hover {
-	text-decoration: underline;
+/* ======== The main article posted in the homepage ======== */
+
+.main-article {
+	position: relative;
+	color: #f8f8f8;
 }
 
-.coming-soon {
-	font: normal 12px 'Open Sans', Helvetica, sans-serif;
-	color: #B2B0B0;
-	position: fixed;
-	bottom: 24px;
-	right: 24px;
+img.main-post {
+	border-radius: 4px;
+	width: 100%;
+	height: auto;
 }
 
-br.mobile-break {
+img.main-post.tablet, img.main-post.mobile {
 	display: none;
 }
 
-@media (max-width: 900px) {
-	.title {
-	font-size: 10.5vw;
-	}
-	.name {
-	font-size:calc(10px + 0.9vw);
+.main-text-container {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 94%;
+	margin-left: 6%;
+}
+
+h1.main-title, p.main-body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Muli', Helvetica, sans-serif;
+	font-weight: normal;
+	color: white;
+	text-decoration: none;
+	text-align: left;
+	max-width: 560px;
+}
+
+h1.main-title {
+	font-size: 2.3em;
+	margin-bottom: 24px;
+	line-height: 130%;
+}
+
+p.main-body {
+	max-width: 700px;
+	line-height: 150%;
+	font-size: 1.2em;
+}
+
+.main-article:hover {
+	box-shadow: 0px 4px 18px #e5e5e5;
+	transform: scale(1.005);
+	transition: all 0.4s;
+}
+.main-article:active {
+	box-shadow: 0px 1px 6px #e5e5e5;
+	transform: scale(1.00);
+	transition: all 0.2s;
+}
+
+.case-study-button {
+	font-weight: bold;
+	padding: 12px 24px 15px 24px;
+	border: 1px solid #ffffff;
+}
+.case-study-button:hover {
+	transition: all .2s;
+	background-color: white;
+	color: #4287c6;
+}
+
+/* ======== Subscribe section ======== */
+
+.sub-container {
+	width: 100%;
+	max-width: 1024px;
+	height: 76vh;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+	flex-flow: column;
+}
+
+#mc-embedded-subscribe-form {
+	margin-top: 48px;
+	width: 100%;
+	text-align: center;
+}
+
+.subscribe {
+	color: #333333;
+	font: inherit;
+	font-size: 1em;
+	line-height: 160%;
+	text-align: center;
+	max-width: 680px;
+}
+
+input.button {
+	padding: 12px 32px;
+	background-color: #000000;
+	color: #ffffff;
+}
+input.button:hover {
+	cursor: pointer;
+	background-color: #333333;
+	transition: all 0.2s;
+}
+
+input[type=text], input[type=email] {
+	height:44px;
+	border-bottom: solid #000000 1px;
+	margin-right: 16px;
+	width: 35%;
+}
+
+/* ============================================================================= */
+/* ================================ Post Pages ================================= */
+/* ============================================================================= */
+
+.post {
+	font: inherit;
+	font-size: 1.2em;
+	line-height: 180%;
+	margin: 48px auto;
+	max-width: 670px;
+}
+
+.post .header {
+	margin: 2.4em 0 1.6em 0;
+	text-align: center;
+}
+
+.post h1 {
+	font-size: 1.8em;
+	line-height: 150%;
+	font-weight: bold;
+}
+
+.post h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 2.4em 0 1.4em 0;
+	line-height: 150%;
+}
+
+.post p {
+	margin-bottom: 2.5em;
+}
+
+/* ========== Post Images + Descriptions ========== */
+
+.image-block {
+	margin-top: 32px;
+	margin-bottom: 32px;
+	width: 96vw;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+img.post-image {
+	width: 100%;
+	height: auto;
+}
+
+.subtitle {
+	font: inherit;
+	font-size: 0.8em;
+	color: #888888;
+	font-style: italic;
+	display: block;
+	text-align: center;
+	margin-top: -8px;
+}
+
+/* ========== Post Call to Action ========== */
+
+.contact-container {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	margin: 100px 0 120px 0;
+}
+
+.post-contact {
+	width: 100%;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	transform: translate(-40%, -40%);
+	text-align: center;
+}
+.post-contact p {
+	font-size: 1.2em;
+	line-height: 160%;
+	margin-bottom: 0;
+}
+
+.button-mail {
+	padding: 10px 36px;
+	margin-top: 24px;
+	cursor: pointer;
+	background-color: #0267C1;
+	display: inline-block;
+}
+
+a.button-mail {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: .5px;
+	font-size: .9em;
+}
+
+.button-mail:hover {
+	background-color: #02559E;
+	transition: all .2s;
+}
+
+
+
+/* ========== Post testimonials ========== */
+
+.testimonial {
+	font-size: .8em;
+	line-height: 150%;
+	color: #333333;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.testimonial img {
+	margin: 0;
+	vertical-align: middle;
+	margin-right: 8px;
+
+}
+.testimonial p {
+	font-style: italic;
+	text-align: left;
+}
+
+.avatar {
+	background-color: #999999;
+	border-radius: 50%;
+	width: 32px;
+	height: auto;
+}
+
+div.author {
+	margin-top: -6px;
+}
+
+/* ============================================================================= */
+/* =============================== Animation Fade ============================== */
+/* ============================================================================= */
+
+
+.hero, .main-article, .head, .post {
+	opacity: 0;
+	animation: fadein ease-in 1;
+	-moz-animation: fadein ease-in 1; /* Firefox */
+	-webkit-animation: fadein ease-in 1; /* Safari and Chrome */
+	-o-animation: fadein ease-in 1; /* Opera */
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+
+	animation-duration: .7s;
+	-webkit-animation-duration: .7s;
+	-moz-animation-duration: .7s;
+	-o-animation-duration: .7s;
+}
+
+.fade-two {
+	animation-delay: 1.9s;
+	-webkit-animation-delay: 1.9s;
+	-moz-animation-delay: 1.9s;
+	-o-animation-delay: 1.9s;
+}
+.fade-one {
+	animation-delay: .2s;
+	-webkit-animation-delay: .2s;
+	-moz-animation-delay: .2s;
+	-o-animation-delay: .2s;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ============================================================================= */
+/* =========================== Navigation - Footer ============================= */
+/* ============================================================================= */
+
+nav.footer {
+	max-width: 1024px;
+	height: 120px;
+	margin: 0 auto;
+	padding: 0 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-detail {
+	width: 100%;
+	border-top: solid #f5f5f5 1px;
+	display: inline-block;
+}
+
+.footer-arrow:hover {
+	transition: all 0.2s;
+	margin-bottom: 4px;
+}
+
+nav.footer a {
+	font: inherit;
+	color:#000000;
+}
+
+nav.footer a:hover {
+	color: #0267C1;
+}
+
+.footer-links {
+	margin-right: 2%;
+}
+
+.footer-links a {
+	margin: 0 8px;
+}
+
+/* ============================================================================= */
+/* ============================ Responsive Styling ============================= */
+/* ============================================================================= */
+
+@media only screen and (min-width: 1024px) {
+	.image-block {
+		max-width: 960px;
+		width: 100vw;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
 
-@media (max-width: 500px) {
-	.title {
-	font-size: 90px;
-	line-height: 120%;
-	margin-top: 0px;
-	}
-	.name {
-	font-size: 18px;
-	line-height: 140%;
-	}
-	br.mobile-break {
+
+@media only screen and (max-width: 768px) {
+
+.hero h1 {
+	font-size: 3em;
+}
+
+.hero p {
+	font-size: .8em;
+}
+
+.plane-icon {
+    width: 6px;
+    margin-left: 11px;
+    font-size: 1.5em !important;
+}
+
+.sub-container {
+	height: 80vh;
+}
+
+.subscribe {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	text-align: left;
+}
+
+input.button {
+	width: 100%;
+}
+
+input[type=text], input[type=email] {
+	width: 100%;
+	margin: 12px 0;
+}
+
+input[type=text] {
+	margin-bottom: 36px;
+}
+
+h1.main-title {
+	font-size: 2.2em;
+}
+
+.main-text-container {
+	width: 60%;
+	top: 20%;
+	transform: translateY(-20%);
+}
+img.main-post, img.main-post.mobile {
+	display: none;
+}
+img.main-post.tablet {
 	display: inline;
 }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+	h1.main-title {
+		font-size: 2em;
+	}
+
+	.main-text-container {
+		width: 80%;
+		top: 10%;
+		transform: translateY(-10%);
+	}
+
+	img.main-post, img.main-post.tablet {
+		display: none;
+	}
+	img.main-post.mobile {
+		display: inline;
+	}
+
 }
