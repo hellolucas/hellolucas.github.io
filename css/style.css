@@ -313,9 +313,10 @@ p.main-body {
 
 .subscribe {
 	font: inherit;
-	font-size: 1em;
+	font-size: 1.2em;
 	text-align: center;
 	max-width: 680px;
+	line-height: 160%;
 }
 
 input.button {
