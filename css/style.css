@@ -38,7 +38,7 @@ li { margin: .7em 0; }
 
 blockquote {
 	padding: 8px 0 8px 16px;
-	margin: 16px 0;
+	margin: 2.75em 0;
 	font-style: italic;
 	border-left: 4px solid #0267C1;
 	font-size: 1.2em;
@@ -366,7 +366,7 @@ input[type=text], input[type=email] {
 
 .post h2 {
 	font-size: 1.5em;
-	margin: 1.75em 0 .75em 0;
+	margin: 2em 0 1em 0;
 }
 
 .post p {
@@ -593,7 +593,7 @@ ul.table-list li:not(.table-header) {
 }
 
 div.issue-wrapper {
-	margin: .25em 0;
+	margin: 1em 0;
 	clear: both;
 	display: inline-block;
 	height: auto;
