@@ -600,6 +600,7 @@ div.issue-wrapper {
 	width: 100%;
 }
 
+
 div.column-2 {
 	float:left;
 	width: 72.5%;
@@ -628,10 +629,12 @@ div.column-2 {
 	display: block;
 	padding-bottom: 16px;
 	top: -48px;
+	color: #181c21;
 }
 
 .issue-body {
-
+	line-height: 160%;
+	color: #181c21;
 }
 
 
