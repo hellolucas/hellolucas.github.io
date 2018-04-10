@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/plans-and-processes.md
 hide_body: false
 fields:
 - type: textarea
