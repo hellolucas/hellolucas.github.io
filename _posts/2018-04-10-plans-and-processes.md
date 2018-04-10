@@ -8,9 +8,10 @@ list: []
 ---
 **TL;DR**
 
-_Process needs business context to work. And in evaluating a designer, it may be more important to figure out how he/she adapts his work-flow in changing contexts than his process._ 
+_Process needs business context to work. And in evaluating a designer, it may be more important to figure out how he/she adapts his work-flow in changing contexts than his process._
 
-##   
+## 
+
 Reaching out for potential clients and interviews, I’ve been getting asked about my process a lot lately. And you’re probably wondering the same too.
 
 It made me realize I never gave it much thought. So when confronted with it, my first instinct reaction was to recite some step-by-step run down of what acceptable design was.
@@ -33,7 +34,7 @@ Good process is understanding the pieces, what their values are, and how to arra
 
 It becomes less of a plan, and more of a game of chess: _When X happens, what do you do?_
 
-![](https://lh4.googleusercontent.com/OJbQYK9F25RFKd4hKVPFbtco7L6E1ikxKSoXakBo7-pwrLq2g9O03zI1tbkWP-LOMFDVFr1GCl80msZ0ms0Wuw-Dde4V_pR-a3xYVmmidylS1tJy0t9AFC51wX_oHPzZTTnNbTr0 =530x304)
+![design thinking](https://lh4.googleusercontent.com/OJbQYK9F25RFKd4hKVPFbtco7L6E1ikxKSoXakBo7-pwrLq2g9O03zI1tbkWP-LOMFDVFr1GCl80msZ0ms0Wuw-Dde4V_pR-a3xYVmmidylS1tJy0t9AFC51wX_oHPzZTTnNbTr0 "design thinking" =530x304)
 
 _The design thinking process: a great framework that doesn't specifically help your business_
 
@@ -65,7 +66,8 @@ Process reality can end up being a little bit different than what you set it out
 
 And it will matter the most how the designer can take the right decisions given the context, and show the value of these decisions to his peers and stakeholders.
 
-###   
+### 
+
 **Final notes**
 
 * Have processes, but liberal in their application.
