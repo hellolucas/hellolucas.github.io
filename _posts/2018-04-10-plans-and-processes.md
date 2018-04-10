@@ -12,7 +12,7 @@ _Process needs business context to work. And in evaluating a designer, it may be
 
 ## 
 
-Reaching out for potential clients and interviews, I’ve been getting asked about my process a lot lately. And you’re probably wondering the same too.
+## Reaching out for potential clients and interviews, I’ve been getting asked about my process a lot lately. And you’re probably wondering the same too.
 
 It made me realize I never gave it much thought. So when confronted with it, my first instinct reaction was to recite some step-by-step run down of what acceptable design was.
 
