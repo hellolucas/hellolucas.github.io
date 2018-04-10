@@ -1,0 +1,20 @@
+---
+hide_body: false
+fields:
+- type: textarea
+  name: content
+  label: Content
+  description: This is your body text.
+  config:
+    wysiwyg: true
+- type: file
+  name: image
+  label: image
+- type: image_gallery
+  name: gallery_image
+  label: Gallery Image
+  description: When you want to add multiple images of something.
+- type: list
+  name: list
+  label: List
+  description: Not quite sure to be honest.
