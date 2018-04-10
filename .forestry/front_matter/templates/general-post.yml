@@ -3,12 +3,6 @@ pages:
 - _posts/2018-04-10-plans-and-processes.md
 hide_body: false
 fields:
-- type: textarea
-  name: content
-  label: Content
-  description: This is your body text.
-  config:
-    wysiwyg: true
 - type: file
   name: image
   label: image
