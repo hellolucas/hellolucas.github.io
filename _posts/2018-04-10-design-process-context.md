@@ -1,5 +1,5 @@
 ---
-title: Design processes don't matter unless you have context
+title: Design process? It probably doesn't matter.
 date: 2018-04-10 02:47:22 +0000
 content: ''
 image: ''
