@@ -4,7 +4,8 @@ date: 2018-04-10 02:47:22 +0000
 content: ''
 image: ''
 gallery_image: []
-list: []
+list:
+- Stuff
 ---
 **TL;DR**
 
@@ -34,7 +35,7 @@ Good process is understanding the pieces, what their values are, and how to arra
 
 It becomes less of a plan, and more of a game of chess: _When X happens, what do you do?_
 
-![design thinking](https://lh4.googleusercontent.com/OJbQYK9F25RFKd4hKVPFbtco7L6E1ikxKSoXakBo7-pwrLq2g9O03zI1tbkWP-LOMFDVFr1GCl80msZ0ms0Wuw-Dde4V_pR-a3xYVmmidylS1tJy0t9AFC51wX_oHPzZTTnNbTr0 "design thinking" =530x304)
+![](/uploads/2018/04/10/WhatsApp Image 2018-04-06 at 22.32.04.jpeg)
 
 _The design thinking process: a great framework that doesn't specifically help your business_
 
