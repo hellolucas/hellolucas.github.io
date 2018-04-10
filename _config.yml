@@ -13,13 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Product Designers Also Write
+title: Designers Also Write
 email: hello@lucastoledo.co
 description: >- # this means to ignore newlines until "baseurl:"
-  Lucas Toledo is a Product Designer (UX/UI) that wants to make brilliant products people really want to use.
-  I write about product design, user experience, interfaces and front-end development. I believe amazing user
-  experiences are a journey and a story — Product designers should enable people to better live their stories.
-
+  Product Designer writing about user journeys, experiences, and how to design for
+  people to better live stories & fulfill narratives. Random thoughts included.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: toledo_lx
